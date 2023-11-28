@@ -2520,6 +2520,32 @@
     history "^5.3.0"
     use-sync-external-store "^1.2.0"
 
+"@swan-io/lake@4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@swan-io/lake/-/lake-4.0.2.tgz#87aa5b87203981060bcb03068295c72b0b0f939c"
+  integrity sha512-HZqt2nOiUiViT1RxA6fBt/TKU2k4MHKx6rVsKbRqIJjcfPMRAwDRvEEXsWrJs4CewqFaQDD2f54p+32cKKzqrA==
+  dependencies:
+    "@popperjs/core" "^2.11.8"
+    "@react-three/drei" "^9.88.17"
+    "@react-three/fiber" "^8.15.11"
+    "@swan-io/boxed" "^1.2.0"
+    "@swan-io/chicane" "^1.4.1"
+    dayjs "^1.11.10"
+    polished "^4.2.2"
+    prism-react-renderer "^2.3.0"
+    react "^18.2.0"
+    react-atomic-state "^1.2.7"
+    react-dom "^18.2.0"
+    react-native-web "^0.19.9"
+    react-popper "^2.3.0"
+    react-ux-form "^1.5.0"
+    rifm "^0.12.1"
+    three "^0.158.0"
+    ts-dedent "^2.2.0"
+    ts-pattern "^5.0.5"
+    urql "^4.0.6"
+    uuid "^9.0.1"
+
 "@swan-io/lake@4.0.3":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@swan-io/lake/-/lake-4.0.3.tgz#78fcd4bcb56558b880d66d8504bd6ffdcf10b1d6"
@@ -2542,6 +2568,27 @@
     rifm "^0.12.1"
     three "^0.158.0"
     ts-dedent "^2.2.0"
+    ts-pattern "^5.0.5"
+    urql "^4.0.6"
+    uuid "^9.0.1"
+
+"@swan-io/shared-business@4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@swan-io/shared-business/-/shared-business-4.0.2.tgz#1178eed44607c61519169b45b0023c3ffbdf636a"
+  integrity sha512-vjhXArTIltyvM91Ogai5k0MCvMsfQLbJFrCx2vkHTTyd+fqFBi0AMW1k4xAm26+Z+AnAtxsgD7XjetAuEMZU2g==
+  dependencies:
+    "@formatjs/intl" "^2.9.9"
+    "@googlemaps/js-api-loader" "1.16.2"
+    "@placekit/client-js" "^2.2.0"
+    "@swan-io/boxed" "^1.2.0"
+    dayjs "^1.11.10"
+    react "^18.2.0"
+    react-atomic-state "^1.2.7"
+    react-dom "^18.2.0"
+    react-dropzone "^14.2.3"
+    react-native-web "^0.19.9"
+    react-ux-form "^1.5.0"
+    rifm "^0.12.1"
     ts-pattern "^5.0.5"
     urql "^4.0.6"
     uuid "^9.0.1"
@@ -6509,6 +6556,11 @@ mute-stream@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
+
+nanoid@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-4.0.2.tgz#140b3c5003959adbebf521c170f282c5e7f9fb9e"
+  integrity sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==
 
 nanoid@5.0.3:
   version "5.0.3"
