@@ -1,15 +1,8 @@
 {
   "builds": [
     {
-      "src": "server/dist/index.js",
+      "src": "**.js",
       "use": "@vercel/node"
-    }
-  ],
-  "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "index.js"
     }
   ]
 }
