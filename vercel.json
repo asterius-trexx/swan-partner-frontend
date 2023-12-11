@@ -9,7 +9,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "server/dist/index.js"
+      "destination": "index.js"
     }
   ]
 }
