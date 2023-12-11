@@ -1,7 +1,7 @@
 import path from "pathe";
 import pc from "picocolors";
-import { start } from "./app";
-import { env } from "./env";
+import { start } from "../app";
+import { env } from "../env";
 import { AccountCountry } from "../graphql/partner";
 
 const keysPath = path.join(__dirname, "../keys");
