@@ -8,7 +8,7 @@
   "trailingSlash": true,
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/",
       "destination": "./server/dist/index.js"
     }
   ]
