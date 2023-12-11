@@ -16,6 +16,7 @@
     "clean": "shx rm -rf dist",
     "prepack": "tsc --build",
     "start": "node -r ./dist/tracing.js ./dist/index.js",
+    "vercel": "node -r ./dist/tracing.js ./dist/index.js",
     "start-swan": "node -r ./dist/tracing.js ./dist/index.swan.js"
   },
   "dependencies": {
