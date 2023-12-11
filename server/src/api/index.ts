@@ -2,7 +2,7 @@ import path from "pathe";
 import pc from "picocolors";
 import { start } from "./app";
 import { env } from "./env";
-import { AccountCountry } from "./graphql/partner";
+import { AccountCountry } from "../graphql/partner";
 
 const keysPath = path.join(__dirname, "../keys");
 
@@ -27,9 +27,9 @@ start({
   httpsConfig:
     env.NODE_ENV === "development"
       ? {
-          key: path.join(keysPath, "_wildcard.swan.local-key.pem"),
-          cert: path.join(keysPath, "_wildcard.swan.local.pem"),
-        }
+        key: path.join(keysPath, "_wildcard.swan.local-key.pem"),
+        cert: path.join(keysPath, "_wildcard.swan.local.pem"),
+      }
       : undefined,
 }).then(
   ({ app, ports }) => {
@@ -57,16 +57,14 @@ start({
     console.log(`${pc.magenta("Onboarding Individual")}`);
     onboardingCountries.forEach(({ cca3, name }) => {
       console.log(
-        `  ${pc.cyan(`${name} Account`)} -> ${
-          env.ONBOARDING_URL
+        `  ${pc.cyan(`${name} Account`)} -> ${env.ONBOARDING_URL
         }/onboarding/individual/start?accountCountry=${cca3}`,
       );
     });
     console.log(`${pc.magenta("Onboarding Company")}`);
     onboardingCountries.forEach(({ cca3, name }) => {
       console.log(
-        `  ${pc.cyan(`${name} Account`)} -> ${
-          env.ONBOARDING_URL
+        `  ${pc.cyan(`${name} Account`)} -> ${env.ONBOARDING_URL
         }/onboarding/company/start?accountCountry=${cca3}`,
       );
     });
