@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "serverless.ts"
+      "destination": "/server/dist/index.js"
     }
   ]
 }
