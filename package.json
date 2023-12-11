@@ -41,7 +41,7 @@
     "match-e2e-translations": "tsx scripts/tests/matchTranslations.ts",
     "configure-hooks": "git config --local core.hooksPath .hooks",
     "ci-get-changelog": "tsx scripts/changelog/getChangelog.ts",
-    "start": "tsx -r dotenv/config server/src/index.ts"
+    "vercel": "tsx -r dotenv/config server/src/index.ts"
   },
   "workspaces": {
     "packages": [
