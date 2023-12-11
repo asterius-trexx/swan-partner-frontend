@@ -5,9 +5,7 @@
       "use": "@vercel/node"
     }
   ],
-  {
-    "trailingSlash": true
-  }
+  "trailingSlash": true,
   "rewrites": [
     {
       "source": "/(.*)",
