@@ -22,7 +22,7 @@ const onboardingCountries = accountCountries
   }))
   .sort((a, b) => a.name.localeCompare(b.name));
 
-export default async () => {
+export default async (req, res) => {
   start({
     mode: env.NODE_ENV,
     httpsConfig:
