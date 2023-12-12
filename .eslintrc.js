@@ -33,6 +33,7 @@ module.exports = {
     {
       files: ["*.d.ts"],
       rules: {
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
         "@typescript-eslint/consistent-type-definitions": "off",
         "@typescript-eslint/no-unused-vars": "off",
       },
