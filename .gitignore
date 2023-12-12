@@ -2,13 +2,13 @@
 .DS_Store?
 node_modules/
 
-clients/*/src/graphql/*.ts
-clients/*/src/graphql/introspection.json
+#clients/*/src/graphql/*.ts
+#clients/*/src/graphql/introspection.json
 
 server/dist/
 server/keys/_wildcard.swan.local-key.pem
 server/keys/_wildcard.swan.local.pem
-server/src/graphql/*.ts
+#server/src/graphql/*.ts
 
 !scripts/graphql/dist/
 scripts/graphql/codegen-verify.yml
