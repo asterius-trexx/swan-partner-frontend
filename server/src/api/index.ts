@@ -4,25 +4,25 @@ import { start } from "../app";
 import { env } from "../env";
 import { AccountCountry } from "../graphql/partner";
 
-const keysPath = path.join(__dirname, "../keys");
-
-const countryTranslations: Record<AccountCountry, string> = {
-  DEU: "German",
-  ESP: "Spanish",
-  FRA: "French",
-  NLD: "Dutch",
-};
-
-const accountCountries = Object.keys(countryTranslations) as AccountCountry[];
-
-const onboardingCountries = accountCountries
-  .map(accountCountry => ({
-    cca3: accountCountry,
-    name: countryTranslations[accountCountry],
-  }))
-  .sort((a, b) => a.name.localeCompare(b.name));
-
 export default async (_req: any, _res: any) => {
+  const keysPath = path.join(__dirname, "../keys");
+
+  const countryTranslations: Record<AccountCountry, string> = {
+    DEU: "German",
+    ESP: "Spanish",
+    FRA: "French",
+    NLD: "Dutch",
+  };
+
+  const accountCountries = Object.keys(countryTranslations) as AccountCountry[];
+
+  const onboardingCountries = accountCountries
+    .map(accountCountry => ({
+      cca3: accountCountry,
+      name: countryTranslations[accountCountry],
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
   start({
     mode: env.NODE_ENV,
     httpsConfig:
